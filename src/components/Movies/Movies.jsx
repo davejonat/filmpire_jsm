@@ -5,7 +5,6 @@ import { useSelector } from 'react-redux';
 import { useGetMoviesQuery } from '../../services/TMDB';
 import { MovieList } from '..';
 
-
 const Movies = () => {
   const { data, error, isFetching } = useGetMoviesQuery();
 
@@ -27,7 +26,7 @@ const Movies = () => {
     </Box>
     );
   }
-  if(error) return 'An Error Has Occured.'
+  if(error) return 'An Error Has Occured.';
 
   return (
     <div>
